@@ -5,28 +5,28 @@ import { useAuth } from '../auth/AuthProvider';
 const apiUrl = process.env.REACT_APP_BACKEND_API;
 
 // Updated mock data to match the new format
-const mockCompanies = {
-  "1": {
-    "description": "ZVIA Tech provides an AI-powered platform that offers personalized learning experiences and data-driven insights.",
-    "name": "ZVIA Tech Pvt. Ltd.",
-    "sector": "EdTech"
-  },
-  "2": {
-    "description": "Autonomous ship hull cleaning and inspection robots",
-    "name": "Mafkin Robotics",
-    "sector": "HealthTech"
-  },
-  "3": {
-    "description": "Cittaa Health Services is transforming mental healthcare in educational institutions through integrated solutions.",
-    "name": "Cittaa Health Service",
-    "sector": "Healthcare"
-  },
-  "4": {
-    "description": "Advanced workflow automation and AI-driven business process optimization platform.",
-    "name": "TechFlow Solutions",
-    "sector": "AI"
-  }
-};
+// const mockCompanies = {
+//   "1": {
+//     "description": "ZVIA Tech provides an AI-powered platform that offers personalized learning experiences and data-driven insights.",
+//     "name": "ZVIA Tech Pvt. Ltd.",
+//     "sector": "EdTech"
+//   },
+//   "2": {
+//     "description": "Autonomous ship hull cleaning and inspection robots",
+//     "name": "Mafkin Robotics",
+//     "sector": "HealthTech"
+//   },
+//   "3": {
+//     "description": "Cittaa Health Services is transforming mental healthcare in educational institutions through integrated solutions.",
+//     "name": "Cittaa Health Service",
+//     "sector": "Healthcare"
+//   },
+//   "4": {
+//     "description": "Advanced workflow automation and AI-driven business process optimization platform.",
+//     "name": "TechFlow Solutions",
+//     "sector": "AI"
+//   }
+// };
 
 
 const colors=[
@@ -37,28 +37,28 @@ const colors=[
 ]
 
 // Additional company details for display (colors and letters)
-const companyDisplayDetails = {
-  "1": {
-    letter: "Z",
-    color: "from-purple-500 to-indigo-600",
-    tags: ["EdTech", "Digital Learning", "Education Analytics"]
-  },
-  "2": {
-    letter: "M",
-    color: "from-green-500 to-teal-600",
-    tags: ["HealthTech", "Medical Imaging"]
-  },
-  "3": {
-    letter: "C",
-    color: "from-orange-500 to-red-500",
-    tags: ["Healthcare", "Telemedicine", "Patient Care"]
-  },
-  "4": {
-    letter: "T",
-    color: "from-blue-500 to-cyan-600",
-    tags: ["AI", "Automation", "Business Process"]
-  }
-};
+// const companyDisplayDetails = {
+//   "1": {
+//     letter: "Z",
+//     color: "from-purple-500 to-indigo-600",
+//     tags: ["EdTech", "Digital Learning", "Education Analytics"]
+//   },
+//   "2": {
+//     letter: "M",
+//     color: "from-green-500 to-teal-600",
+//     tags: ["HealthTech", "Medical Imaging"]
+//   },
+//   "3": {
+//     letter: "C",
+//     color: "from-orange-500 to-red-500",
+//     tags: ["Healthcare", "Telemedicine", "Patient Care"]
+//   },
+//   "4": {
+//     letter: "T",
+//     color: "from-blue-500 to-cyan-600",
+//     tags: ["AI", "Automation", "Business Process"]
+//   }
+// };
 
 const DashboardPage = () => {
   const { user, logout, token } = useAuth();
